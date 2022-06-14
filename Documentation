@@ -1,0 +1,25 @@
+\\\\  Animations   \\\\
+
+1: Sidebar icons hover
+2: Social icon hover
+3: Private chat page > search chats
+4: Chat image preview
+5: Play voice message
+6: Voice recording (after clicking mic button)
+7: Media images hover
+
+
+
+\\\\  Responsive   \\\\
+
+\\\ tab \\\
+
+1: When we click Click Profile picture or name after will open details page, 
+   and same time we can see top right corner a close icon for go chat page.
+   
+\\\ Mobile
+
+2: Can switch details page like tab view
+
+3: When click back button(placed in private chat header left side) we can go to chat lists page,
+   and same click any chat row we can go private chat page.

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muthu Kumar Task</title>
+
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- \icons -->
+</head>
+
+<body>
+    <!-- main -->
+    <main class="main d_flex overflow_hidden" id="main">
+        <!-- sidebar -->
+        <div class="sidebar d_flex_al_c_ju_sb_fd_c overflow_hidden">
+            <ul class="apps">
+                <li class="figma d_flex_al_c_ju_c">
+                    <a href="#">
+                        <img src="./images/figma.svg" alt="Figma" title="Figma" class="figma_svg">
+                    </a>
+                </li>
+
+                <li class="mailchimp d_flex_al_c_ju_c">
+                    <a href="#">
+                        <img src="./images/mailchimp.svg" alt="Mail Chimp" title="Mail Chimp" class="mailchimp_svg">
+                    </a>
+                </li>
+
+                <li class="dribbble d_flex_al_c_ju_c">
+                    <a href="#">
+                        <img src="./images/dribbble.svg" alt="Dribbble" title="dribbble" class="dribbble_svg">
+                    </a>
+                </li>
+
+                <li class="chat d_flex_al_c_ju_c">
+                    <a href="#">
+                        <img src="./images/chat.svg" alt="Chat" title="Chat" class="chat_svg">
+                    </a>
+                </li>
+
+                <li class="d_flex_al_c_ju_c">
+                    <a href="#"><i class="fa-duotone fa-plus"></i></a>
+                </li>
+            </ul>
+
+            <ul class="manage">
+                <li>
+                    <a href="#"><span class="material-symbols-outlined"> settings </span></a>
+                </li>
+
+                <li>
+                    <a href="#"><span class="material-symbols-outlined"> person </span></a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- \sidebar -->
+
+        <!-- right_container -->
+        <div class="right_container d_flex" id="right_container">
+            <!-- users -->
+            <div class="users overflow_hidden" id="users">
+                <div class="self_info">
+                    <div class="inner border">
+                        <div class="pic active d_inline">
+                            <img src="./images/profile.avif" alt="Profile Photo" title="Profile Photo">
+                        </div>
+
+                        <h4>Heather Parker</h4>
+
+                        <ul class="social d_flex_ju_ce">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="active_users">
+                        <div class="inner border">
+                            <h5>Active Users</h5>
+
+                            <ul class="cols pic d_flex scrollable toY">
+                                <li class="col active">
+                                    <a href="#">
+                                        <img src="./images/user_2.avif" alt="User" title="User">
+                                    </a>
+                                </li>
+
+                                <li class="col active">
+                                    <a href="#">
+                                        <img src="./images/user_5.webp" alt="User" title="User">
+                                    </a>
+                                </li>
+
+                                <li class="col active">
+                                    <a href="#">
+                                        <img src="./images/user_6.webp" alt="User" title="User">
+                                    </a>
+                                </li>
+
+                                <li class="col active">
+                                    <a href="#">
+                                        <img src="./images/user_7.webp" alt="User" title="User">
+                                    </a>
+                                </li>
+
+                                <li class="col active">
+                                    <a href="#">
+                                        <img src="./images/user_8.webp" alt="User" title="User">
+                                    </a>
+                                </li>
+
+                                <li class="col active">
+                                    <a href="#">
+                                        <img src="./images/user_9.webp" alt="User" title="User">
+                                    </a>
+                                </li>
+
+                                <li class="col active">
+                                    <a href="#">
+                                        <img src="./images/user_10.avif" alt="User" title="User">
+                                    </a>
+                                </li>
+
+                                <li class="col active">
+                                    <a href="#">
+                                        <img src="./images/user_11.avif" alt="User" title="User">
+                                    </a>
+                                </li>
+
+                                <li class="col active">
+                                    <a href="#">
+                                        <img src="./images/user_3.avif" alt="User" title="User">
+                                    </a>
+                                </li>
+
+                                <li class="col active">
+                                    <a href="#">
+                                        <img src="./images/user_15.avif" alt="User" title="User">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="chat_list scrollable" id="chat_list">
+                        <div class="heading">
+                            <h5 class="chats_ht">Chats</h5>
+
+                            <div class="input_box d_flex_al_ce">
+                                <span class="material-symbols-outlined icon">search</span>
+                                <input type="search" placeholder="Search" class="form_control search_input">
+                            </div>
+
+                        </div>
+
+                        <div class="chat_rows">
+                            <div class="chat_row" onclick="togglePages('users')">
+                                <div class="chat_row_in d_flex">
+                                    <div class="pic active">
+                                        <img src="./images/user_12.avif" alt="User" title="User">
+                                    </div>
+
+                                    <div class="w_100">
+                                        <div class="d_flex_al_ce_ju_sb">
+                                            <h6>Darlene Robertson</h6>
+                                            <span class="t_sm">10:30 AM</span>
+                                        </div>
+
+                                        <div>
+                                            <p>Text me when you arrive new bus stop and ready to go.</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="chat_row" onclick="togglePages('users')">
+                                <div class="chat_row_in d_flex">
+                                    <div class="pic in_active">
+                                        <img src="./images/user_2.avif" alt="User" title="User">
+                                    </div>
+
+                                    <div class="w_100">
+                                        <div class="d_flex_al_ce_ju_sb">
+                                            <h6>Robert Fox</h6>
+                                            <span class="t_sm">10:30 AM</span>
+                                        </div>
+
+                                        <div>
+                                            <p>
+                                                I'm plan to going Ooty, So are you come?
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="chat_row" onclick="togglePages('users')">
+                                <div class="chat_row_in d_flex">
+                                    <div class="pic active">
+                                        <img src="./images/user_1.avif" alt="User" title="User">
+                                    </div>
+
+                                    <div class="w_100">
+                                        <div class="d_flex_al_ce_ju_sb">
+                                            <h6>Therasa Webb</h6>
+                                            <span class="t_sm">10:05 AM</span>
+                                        </div>
+
+                                        <div>
+                                            <p>
+                                                Dont' waste your time ok? time is gold
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="chat_row" onclick="togglePages('users')">
+                                <div class="chat_row_in d_flex">
+                                    <div class="pic in_active">
+                                        <img src="./images/user_3.avif" alt="User" title="User">
+                                    </div>
+
+                                    <div class="w_100">
+                                        <div class="d_flex_al_ce_ju_sb">
+                                            <h6>Kristin Watson</h6>
+                                            <span class="t_sm">09:45 AM</span>
+                                        </div>
+
+                                        <div>
+                                            <p>
+                                                Your handsome, I have a great lunch today. do yu know.
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="chat_row" onclick="togglePages('users')">
+                                <div class="chat_row_in d_flex">
+                                    <div class="pic in_active">
+                                        <img src="./images/user_4.webp" alt="User" title="User">
+                                    </div>
+
+                                    <div class="w_100">
+                                        <div class="d_flex_al_ce_ju_sb">
+                                            <h6>Cody Fisher</h6>
+                                            <span class="t_sm">09:30 AM</span>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                What are you doing today? come on outside ok boy?
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="chat_row" onclick="togglePages('users')">
+                                <div class="chat_row_in d_flex">
+                                    <div class="pic active">
+                                        <img src="./images/user_13.avif" alt="User" title="User">
+                                    </div>
+
+                                    <div class="w_100">
+                                        <div class="d_flex_al_ce_ju_sb">
+                                            <h6>Jane Cooper</h6>
+                                            <span class="t_sm">09:10 AM</span>
+                                        </div>
+
+                                        <div>
+                                            <p>What's Your next Plan , when you go out.
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="chat_row" onclick="togglePages('users')">
+                                <div class="chat_row_in d_flex">
+                                    <div class="pic in_active">
+                                        <img src="./images/user_14.avif" alt="User" title="User">
+                                    </div>
+
+                                    <div class="w_100">
+                                        <div class="d_flex_al_ce_ju_sb">
+                                            <h6>Jackie</h6>
+                                            <span class="t_sm">08:45 AM</span>
+                                        </div>
+                                        <div>
+                                            <p>Hi, I want to talk about the new movie release in this month and next
+                                                month
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- \users -->
+
+            <!-- chat -->
+            <div class="chat overflow_hidden" id="chat">
+                <div class="inner">
+                    <header class="chat_header d_flex_al_ce_ju_sb">
+                        <div class="d_flex_al_ce navs">
+                            <div class="back" onclick="togglePages('users')">
+                                <span class="material-symbols-outlined chat_back_btn">
+                                    arrow_back_ios
+                                </span>
+                            </div>
+
+                            <div class="pic" onclick="togglePages('details')">
+                                <img src="./images/user_1.avif" alt="User" title="User">
+                            </div>
+
+                            <div class="name" onclick="togglePages('details')">
+                                <h5>Therasa Webb</h5>
+                            </div>
+
+                        </div>
+
+                        <ul class="chat_actions d_flex_al_ce" id="chat_header_right">
+                            <li>
+                                <a href="#"><span class="material-symbols-outlined icon">call</span></a>
+                            </li>
+
+                            <li>
+                                <a href="#"><span class="material-symbols-outlined icon">videocam</span></a>
+                            </li>
+
+                            <li class="chat_actions_divider pos_rel">
+                            </li>                            
+
+                            <li class="chat_search pos_rel">
+                                <label for="search_input">
+                                    <span class="material-symbols-outlined icon">search</span>
+                                </label>
+                                <input type="search" class="form_control search_input" id="search_input"
+                                    onfocusin="onSearchToggle()" onfocusout="onSearchToggle()">
+                            </li>
+
+                            <li>
+                                <a href="#"><span class="material-symbols-outlined icon">more_vert</span></a>
+                            </li>
+
+                        </ul>
+
+                    </header>
+
+                    <div>
+                        <div class="messages scrollable" id="messages">
+                            <div class="msg_block d_flex">
+                                <div class="pic">
+                                    <img src="./images/user_2.avif" alt="User" title="User">
+                                </div>
+
+                                <div class="content w_100">
+                                    <div class="info d_flex_al_ce">
+                                        <h5>Darlene Robertson</h5>
+                                        <span class="t_sm">10:30 AM</span>
+                                    </div>
+
+                                    <div>
+                                        <div class="msg d_flex_al_ce">
+                                            <p>Hi! Theresa Webb! Are you still travelling</p>
+                                            <a href="#">
+                                                <span class="material-symbols-outlined icon">more_vert</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="msg d_flex_al_ce">
+                                            <p>Would love to see some pictures &#128512;</p>
+                                            <a href="#">
+                                                <span class="material-symbols-outlined icon">more_vert</span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="msg_block my_msg d_flex_ju_e">
+                                <div class="pic">
+                                    <img src="./images/user_1.avif" alt="User" title="User">
+                                </div>
+
+                                <div class="content">
+                                    <div class="info d_flex_al_c_ju_e">
+                                        <h5>Darlene Robertson</h5>
+                                        <span class="t_sm">10:30 AM</span>
+                                    </div>
+
+                                    <div>
+                                        <div class="msg d_flex_al_c_ju_e">
+                                            <p>Hi! Theresa Webb! Are you still travelling</p>
+                                            <a href="#">
+                                                <span class="material-symbols-outlined icon">more_vert</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="msg d_flex_al_c_ju_e">
+                                            <p>Would love to see some pictures &#128512;</p>
+                                            <a href="#">
+                                                <span class="material-symbols-outlined icon">more_vert</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="msg img_cols d_flex_al_c_ju_e flex_wrap">
+                                            <div class="close_icon pos_abs" id="close_icon" name="close_icon"
+                                                onclick="previewImageHandle()">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </div>
+
+                                            <figure class="img_col" id="img1" onclick="previewImageHandle('img1')">
+                                                <img src="./images/girl.avif" alt="Girl" title="Girl">
+                                            </figure>
+
+                                            <figure class="img_col" id="img2" onclick="previewImageHandle('img2')">
+                                                <img src="./images/car.avif" alt="Car" title="Car">
+                                            </figure>
+
+                                        </div>
+
+                                        <ul class="msg_reactions d_flex_al_c_ju_e">
+                                            <li class="t_sm">&#128077; 7</li>
+                                            <li class="t_sm">&#128175; 25</li>
+                                        </ul>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="msg_block d_flex">
+                                <div class="pic">
+                                    <img src="./images/user_2.avif" alt="User" title="User">
+                                </div>
+
+                                <div class="content w_100">
+                                    <div class="info d_flex_al_ce">
+                                        <h5>Darlene Robertson</h5>
+                                        <span class="t_sm">10:30 AM</span>
+                                    </div>
+
+                                    <div>
+                                        <div class="msg d_flex_al_ce">
+                                            <p>Awesome &#128512;</p>
+                                            <a href="#">
+                                                <span class="material-symbols-outlined icon">more_vert</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="msg audio d_flex_al_ce">
+                                            <audio src="./audio/audio_1.mp3">
+                                            </audio>
+
+                                            <div class="pos_rel d_flex_al_c_ju_c" id="audio_1">
+                                                <i class="fa-solid fa-play play" onclick="handleAudio(this)"></i>
+                                                <i class="fa-solid fa-pause pause pos_abs"
+                                                    onclick="handleAudio(this)"></i>
+                                            </div>
+
+                                            <div class="progress pos_rel">
+                                                <span class="progress_bar pos_abs"></span>
+                                            </div>
+
+                                            <div class="time d_flex_al_ce">
+                                                <span class="dot"></span>
+                                                <span class="audio_time t_sm">1:27</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="type_group d_flex_al_ce_ju_sb" id="type_group">
+                            <ul class="record d_flex_al_ce">
+                                <li class="delete" onclick="recordingToggle('type')">
+                                    <i class='bx bxs-trash-alt'></i>
+                                </li>
+
+                                <li class="anim">
+                                    <ul class="balls d_flex">
+                                        <li class="ball ball_1"></li>
+                                        <li class="ball ball_2"></li>
+                                        <li class="ball ball_3"></li>
+                                        <li class="ball ball_4"></li>
+                                        <li class="ball ball_5"></li>
+                                        <li class="ball ball_6"></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <span class="material-symbols-outlined">pause</span>
+                                </li>
+
+                                <li>
+                                    <i class='bx bxs-send'></i>
+                                </li>
+
+                            </ul>
+
+                            <div class="input_box w_100 overflow_hidden">
+                                <div class="inner d_flex_al_ce">
+                                    <div class="w_100 d_flex_al_ce">
+                                        <a href="#" onclick="recordingToggle('record')"><i
+                                                class="fa-solid fa-microphone"></i></a>
+                                        <input type="text" placeholder="Add a comment" class="form_control">
+                                    </div>
+
+                                    <ul class="d_flex_al_ce">
+                                        <li><a href="#"><i class="fa-regular fa-images"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-face-smile"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-tag"></i></a></li>
+                                        <li><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- \chat -->
+
+            <!-- details -->
+            <div class="details scrollable pos_rel" id="details">
+                <div class="inner">
+                    <div class="close" onclick="togglePages('details')">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+
+                    <div class="about">
+                        <div class="heading">
+                            <h5>About</h5>
+                        </div>
+                        <p>Add details about people like, contact information.</p>
+                        <a href="#" class="btn d_inline">Add Details</a>
+                    </div>
+
+                    <div class="members">
+                        <div class="heading d_flex_al_ce">
+                            <h5>Members</h5>
+                            <span class="t_md">4</span>
+                        </div>
+
+                        <ul class="list">
+                            <li class="d_flex_al_ce_ju_sb">
+                                <div class="d_flex_al_ce">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="./images/user_2.avif" alt="User" title="User">
+                                        </a>
+                                    </div>
+
+                                    <h6>Robert Fox</h6>
+
+                                </div>
+
+                                <ul class="d_flex member_actions">
+                                    <li>
+                                        <a href="#"><span class="material-symbols-outlined">call</span></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><span class="material-symbols-outlined">chat_bubble</span></a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="d_flex_al_ce_ju_sb">
+                                <div class="d_flex_al_ce">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="./images/user_1.avif" alt="User" title="User">
+                                        </a>
+                                    </div>
+
+                                    <h6>Therasa Webb</h6>
+
+                                </div>
+
+                                <ul class="d_flex member_actions">
+                                    <li>
+                                        <a href="#"><span class="material-symbols-outlined">call</span></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><span class="material-symbols-outlined">chat_bubble</span></a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="d_flex_al_ce_ju_sb">
+                                <div class="d_flex_al_ce">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="./images/user_3.avif" alt="User" title="User">
+                                        </a>
+                                    </div>
+
+                                    <h6>Kristin Watson</h6>
+
+                                </div>
+
+                                <ul class="d_flex member_actions">
+                                    <li>
+                                        <a href="#"><span class="material-symbols-outlined">call</span></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><span class="material-symbols-outlined">chat_bubble</span></a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="d_flex_al_ce_ju_sb">
+                                <div class="d_flex_al_ce">
+                                    <div class="pic">
+                                        <a href="#">
+                                            <img src="./images/user_4.webp" alt="User" title="User">
+                                        </a>
+                                    </div>
+
+                                    <h6>Cody Fisher</h6>
+
+                                </div>
+
+                                <ul class="d_flex member_actions">
+                                    <li>
+                                        <a href="#"><span class="material-symbols-outlined">call</span></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><span class="material-symbols-outlined">chat_bubble</span></a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="media">
+                        <div class="heading d_flex_al_ce">
+                            <h5>Media</h5>
+                            <span class="t_md">39 Images</span>
+                        </div>
+
+                        <ul class="cols d_flex">
+                            <li class="col">
+                                <a href="#">
+                                    <img src="./images/media_1.avif" alt="Media" title="Media">
+                                </a>
+                            </li>
+
+                            <li class="col">
+                                <a href="#">
+                                    <img src="./images/media_2.avif" alt="Media" title="Media">
+                                </a>
+                            </li>
+
+                            <li class="col">
+                                <a href="#">
+                                    <img src="./images/media_4.avif" alt="Media" title="Media">
+                                </a>
+                            </li>
+
+                            <li class="col d_flex_al_c_ju_c">
+                                <span class="t_sm">+136</span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="labels">
+                        <div class="heading d_flex_al_ce_ju_sb">
+                            <h5>Labels</h5>
+                            <span class="t_sm">Manage labels</span>
+                        </div>
+
+                        <ul class="cols">
+                            <li class="work d_flex_al_ce">
+                                <i class='bx bxs-tag-alt'></i>
+                                <h6>Work in progres</h6>
+                            </li>
+
+                            <li class="important d_flex_al_ce">
+                                <i class='bx bxs-tag-alt'></i>
+                                <h6>Important tasks</h6>
+                            </li>
+
+                            <li class="project d_flex_al_ce">
+                                <i class='bx bxs-tag-alt'></i>
+                                <h6>Project documents</h6>
+                            </li>
+
+                            <li class="later d_flex_al_ce">
+                                <i class='bx bxs-tag-alt'></i>
+                                <h6>Read later</h6>
+                            </li>
+
+                            <li class="travel d_flex_al_ce">
+                                <i class='bx bxs-tag-alt'></i>
+                                <h6>Travel documents</h6>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- \details -->
+
+        </div>
+        <!-- \right_container -->
+
+    </main>
+    <!-- \main -->
+
+
+    <!-- script -->
+    <script src="./js/script.js"></script>
+    <!-- \script -->
+</body>
+
+</html>
