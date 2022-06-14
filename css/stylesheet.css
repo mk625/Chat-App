@@ -112,6 +112,7 @@ p {
   overflow-y: auto;
   overflow-x: auto;
   color: #c4c4c400;
+  transition: 0.3s color;
 }
 
 .scrollable:hover {
@@ -119,16 +120,16 @@ p {
 }
 
 .scrollable::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
 
 .scrollable.toY::-webkit-scrollbar {
   width: initial;
-  height: 6px;
+  height: 4px;
 }
 
 .scrollable::-webkit-scrollbar-thumb {
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: inset 0 0 0 6px;
 }
 /* custom */
@@ -469,12 +470,11 @@ p {
 
 .chat_list .chat_row {
   padding: 0 30px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .chat_row:hover {
   background-color: var(--secBlue);
-  transition: 0.2s;
 }
 
 .chat_row_in {
@@ -646,7 +646,7 @@ p {
 }
 
 .msg p {
-  padding: 12px 20px;
+  padding: 12px;
   background-color: var(--secBlue);
   border-radius: 10px;
 }

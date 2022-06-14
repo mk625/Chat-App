@@ -1,0 +1,16 @@
+{
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#353535",
+        "tab.activeBorder": "#c5c5c5",
+        "tab.hoverBackground": "#2c2c2c",
+        "list.activeSelectionBackground": "#353535",
+        "list.hoverBackground": "#2e2e2e",
+        "input.background": "#353535",
+        "inputOption.activeBackground": "#5c5c5c",
+        "editor.findMatchBackground": "#45bcc0",
+        "editor.findMatchHighlightBorder": "#8d8d8d",
+        "activityBar.background": "#00495c",
+        "titleBar.activeBackground": "#00495c",
+        "titleBar.activeForeground": "#F6FCF3"
+    }
+}
