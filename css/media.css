@@ -168,16 +168,7 @@
   }
 
   .msg_block .pic {
-    margin: 0 10px 0 0;
-  }
-
-  .my_msg .pic {
-    margin: 0 0 0 10px;
-  }
-
-  .msg_block .pic img {
-    width: 20px;
-    height: 20px;
+    display: none;
   }
 
   .chat_header,

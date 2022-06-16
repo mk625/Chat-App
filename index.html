@@ -21,7 +21,7 @@
     <!-- main -->
     <main class="main d_flex overflow_hidden" id="main">
         <!-- sidebar -->
-        <div class="sidebar d_flex_al_c_ju_sb_fd_c overflow_hidden">
+        <section class="sidebar d_flex_al_c_ju_sb_fd_c overflow_hidden">
             <ul class="apps">
                 <li class="figma d_flex_al_c_ju_c">
                     <a href="#">
@@ -63,13 +63,13 @@
 
             </ul>
 
-        </div>
+        </section>
         <!-- \sidebar -->
 
         <!-- right_container -->
-        <div class="right_container d_flex" id="right_container">
+        <section class="right_container d_flex" id="right_container">
             <!-- users -->
-            <div class="users overflow_hidden" id="users">
+            <section class="users overflow_hidden" id="users">
                 <div class="self_info">
                     <div class="inner border">
                         <div class="pic active d_inline">
@@ -329,11 +329,11 @@
 
                 </div>
 
-            </div>
+            </section>
             <!-- \users -->
 
             <!-- chat -->
-            <div class="chat overflow_hidden" id="chat">
+            <section class="chat overflow_hidden" id="chat">
                 <div class="inner">
                     <header class="chat_header d_flex_al_ce_ju_sb">
                         <div class="d_flex_al_ce navs">
@@ -363,7 +363,7 @@
                             </li>
 
                             <li class="chat_actions_divider pos_rel">
-                            </li>                            
+                            </li>
 
                             <li class="chat_search pos_rel">
                                 <label for="search_input">
@@ -495,7 +495,7 @@
                                             <div class="pos_rel d_flex_al_c_ju_c" id="audio_1">
                                                 <i class="fa-solid fa-play play" onclick="handleAudio(this)"></i>
                                                 <i class="fa-solid fa-pause pause pos_abs"
-                                                    onclick="handleAudio(this)"></i>
+                                                    onclick="handleAudio()"></i>
                                             </div>
 
                                             <div class="progress pos_rel">
@@ -566,11 +566,11 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
             <!-- \chat -->
 
             <!-- details -->
-            <div class="details scrollable pos_rel" id="details">
+            <section class="details scrollable pos_rel" id="details">
                 <div class="inner">
                     <div class="close" onclick="togglePages('details')">
                         <i class="fa-solid fa-xmark"></i>
@@ -765,10 +765,10 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
             <!-- \details -->
 
-        </div>
+        </section>
         <!-- \right_container -->
 
     </main>

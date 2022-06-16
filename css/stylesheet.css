@@ -470,7 +470,7 @@ p {
 
 .chat_list .chat_row {
   padding: 0 30px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .chat_row:hover {
@@ -769,6 +769,12 @@ p {
   animation: blink 1s steps(2) infinite;
 }
 
+@keyframes blink {
+  0% {
+    visibility: hidden;
+  }
+}
+
 .audio.played .dot {
   animation: initial;
   background-color: var(--green);
@@ -780,12 +786,6 @@ p {
 
 .audio.played .pause {
   transform: scale(0);
-}
-
-@keyframes blink {
-  0% {
-    visibility: hidden;
-  }
 }
 /* \audio msg */
 

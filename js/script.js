@@ -12,13 +12,14 @@ let search_input = document.getElementById("search_input");
 // sections
 let closeIcon = document.getElementById("close_icon");
 let previewImgId;
+let barWidthAnimation;
 // \variables
 
-// oninit
+// on load
 chat_list.style.height = main.offsetHeight - chat_list.offsetTop + "px";
 messages.style.height =
   main.offsetHeight - messages.offsetTop - type_group.offsetHeight + "px";
-// \oninit
+// \on load
 
 // functions
 function onSearchToggle() {
@@ -59,27 +60,33 @@ function togglePages(page) {
 }
 
 function handleAudio(element) {
-  let parent = element.parentElement.parentElement;
-  parent.classList.add("playing");
-  parent.classList.remove("played");
-  let audio = parent.children[0];
-  audio.play();
-  let duration = Math.round(parent.children[0].duration);
-  let barWidthTmp = 100 / duration;
-  let barWidth = barWidthTmp;
-  let counter = 1;
+  if (element) {
+    console.log("if");
+    let parent = element.parentElement.parentElement;
+    parent.classList.add("playing");
+    let audio = parent.children[0];
+    audio.play();
+    let duration = Math.round(parent.children[0].duration);
+    let barWidthTmp = 100 / duration;
+    let barWidth = barWidthTmp;
+    let counter = 1;
 
-  const barWidthAnimation = setInterval(function () {
-    counter++;
-    if (counter === duration) {
-      clearInterval(barWidthAnimation);
-      setTimeout(function () {
-        parent.classList.add("played");
-      }, 1000);
-    }
-    barWidth += barWidthTmp;
-    parent.children[2].children[0].style.width = barWidth + "%";
-  }, 1000);
+    barWidthAnimation = setInterval(function () {
+      counter++;
+      if (counter === duration) {
+        clearInterval(barWidthAnimation);
+        setTimeout(function () {
+          parent.classList.add("played");
+        }, 1000);
+      }
+      barWidth += barWidthTmp;
+      parent.children[2].children[0].style.width = barWidth + "%";
+    }, 1000);
+  } else {
+    console.log("else");
+    parent.classList.remove("playing");
+    clearInterval(barWidthAnimation);
+  }
 }
 
 function recordingToggle(msg) {
