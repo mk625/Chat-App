@@ -2,6 +2,8 @@
 
 /* common */
 :root {
+  --white: #fff;
+  --black: #000;
   --text: #202020;
   --secText: #697492;
   --blue: #5c60f4;
@@ -27,7 +29,7 @@
 }
 
 body {
-  background-color: var(--text);
+  background-color: var(--black);
 }
 
 h1,
@@ -232,12 +234,13 @@ p {
   background-color: #fff;
 }
 
-.main.preview_mode {
+.preview_mode {
   position: relative;
   pointer-events: none;
+  user-select: none;
 }
 
-.main.preview_mode::after {
+.preview_mode::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -245,14 +248,9 @@ p {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
 }
 
-.main.preview_mode .right_container > * {
-  z-index: initial;
-}
-
-.main.preview_mode #close_icon {
+.preview_mode #close_icon {
   pointer-events: initial;
 }
 /* sidebar */
@@ -260,7 +258,6 @@ p {
   width: 70px;
   padding: 10px 0 30px;
   border-right: 1px solid var(--lightGray);
-  z-index: 2;
 }
 
 .sidebar a {
@@ -292,7 +289,7 @@ p {
 }
 
 .sidebar .figma {
-  background-color: black;
+  background-color: var(--black);
 }
 
 .sidebar .mailchimp {
@@ -353,7 +350,6 @@ p {
 }
 
 .right_container > * {
-  z-index: 2;
   transition: width 0.5s;
 }
 
@@ -670,10 +666,11 @@ p {
   right: 5%;
   top: 5%;
   cursor: pointer;
-  z-index: 5;
+  z-index: 1;
 }
 
 .msg .close_icon i {
+  font-size: 16px;
   color: #fff;
   transition: 0.5s;
 }
@@ -684,11 +681,18 @@ p {
 }
 
 .msg .img_col.preview {
+  z-index: 1;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(2.6);
-  z-index: 5;
+  animation: previewImage 0.7s;
+}
+
+@keyframes previewImage {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
 }
 
 .msg_reactions li {
@@ -841,7 +845,6 @@ p {
 
 .type_group .input_box {
   transition: 0.5s;
-  z-index: 1;
 }
 
 .chat.recording .input_box {

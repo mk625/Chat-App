@@ -13,6 +13,7 @@ let search_input = document.getElementById("search_input");
 let closeIcon = document.getElementById("close_icon");
 let previewImgId;
 let barWidthAnimation;
+let audParent;
 // \variables
 
 // on load
@@ -59,35 +60,54 @@ function togglePages(page) {
   }
 }
 
-function handleAudio(element) {
-  if (element) {
-    console.log("if");
-    let parent = element.parentElement.parentElement;
-    parent.classList.add("playing");
-    let audio = parent.children[0];
-    audio.play();
-    let duration = Math.round(parent.children[0].duration);
-    let barWidthTmp = 100 / duration;
-    let barWidth = barWidthTmp;
-    let counter = 1;
+// audio player
+let counter = 1;
+let duration;
+let barWidthTmp;
+let barWidth;
+let audio;
 
+function handleAudio(element) {
+  if (!audio) {
+    audParent = element.parentElement.parentElement;
+    audio = audParent.children[0];
+    duration = Math.round(audParent.children[0].duration);
+    barWidthTmp = 100 / duration;
+    barWidth = barWidthTmp;
+    audio.play();
+    audParent.classList.add("playing");
     barWidthAnimation = setInterval(function () {
       counter++;
       if (counter === duration) {
         clearInterval(barWidthAnimation);
         setTimeout(function () {
-          parent.classList.add("played");
+          audParent.classList.add("played");
         }, 1000);
       }
       barWidth += barWidthTmp;
-      parent.children[2].children[0].style.width = barWidth + "%";
+      audParent.children[2].children[0].style.width = barWidth + "%";
+    }, 1000);
+  } else if (element) {
+    audParent.classList.remove("played");
+    audParent.classList.add("playing");
+    audio.play();
+    barWidthAnimation = setInterval(function () {
+      counter++;
+      if (counter === duration) {
+        clearInterval(barWidthAnimation);
+        setTimeout(function () {
+          audParent.classList.add("played");
+        }, 1000);
+      }
+      barWidth += barWidthTmp;
+      audParent.children[2].children[0].style.width = barWidth + "%";
     }, 1000);
   } else {
-    console.log("else");
-    parent.classList.remove("playing");
+    audParent.classList.remove("playing");
     clearInterval(barWidthAnimation);
   }
 }
+// audio player
 
 function recordingToggle(msg) {
   if (msg === "record") {
