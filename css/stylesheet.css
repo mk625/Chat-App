@@ -20,16 +20,14 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
-  text-decoration: none;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  color: var(--secText);
-  font-size: 14px;
 }
 
 body {
   background-color: var(--black);
+  font-family: "Roboto", sans-serif;
+  color: var(--secText);
+  font-size: 14px;
 }
 
 h1,
@@ -55,9 +53,17 @@ h6 {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   color: var(--secText);
   line-height: 1.5;
+}
+
+ul li {
+  list-style: none;
 }
 
 .form_control {
@@ -849,6 +855,10 @@ p {
 
 .chat.recording .input_box {
   width: 0;
+}
+
+.chat.recording .record { 
+  width: 100%;
 }
 
 .type_group .input_box > .inner {
