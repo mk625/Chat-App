@@ -1,145 +1,12 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* common */
-:root {
-  --white: #fff;
-  --black: #000;
-  --text: #202020;
-  --secText: #697492;
-  --blue: #5c60f4;
-  --secBlue: #f5f9fc;
-  --pink: #f85f9a;
-  --green: #03cc87;
-  --orange: #ff8e2f;
-  --yellow: #f7e04b;
-  --red: #ff3366;
-  --lightGray: #e7eaef;
-  --iconGray: #6b7c93;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background-color: var(--black);
-  font-family: "Roboto", sans-serif;
-  color: var(--secText);
-  font-size: 14px;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--text);
-  font-weight: 500;
-}
 
-h4 {
-  font-size: 17px;
-}
-
-h5 {
-  font-size: 15px;
-  font-weight: 400;
-}
-
-h6 {
-  font-weight: 400;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  color: var(--secText);
-  line-height: 1.5;
-}
-
-ul li {
-  list-style: none;
-}
-
-.form_control {
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-}
-
-.search_input::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-  background: url(../images/cancel.svg);
-  background-size: 100%;
-  height: 4px;
-  width: 4px;
-  padding: 4px;
-  border-radius: 4px;
-  margin: 0 0 0 6px;
-  position: relative;
-}
-
-.btn {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text);
-  padding: 8px 16px;
-  border: 1px solid var(--lightGray);
-  border-radius: 4px;
-}
-
-.active,
-.in_active {
-  position: relative;
-}
-
-.active::after,
-.in_active::after {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  background-color: var(--green);
-  position: absolute;
-  right: 4px;
-  bottom: 6px;
-}
-
-.in_active::after {
-  background-color: #fa4e66;
-}
-
-.scrollable {
-  overflow-y: auto;
-  overflow-x: auto;
-  color: #c4c4c400;
-  transition: 0.3s color;
-}
-
-.scrollable:hover {
-  color: #c4c4c460;
-}
-
-.scrollable::-webkit-scrollbar {
-  width: 4px;
-}
-
-.scrollable.toY::-webkit-scrollbar {
-  width: initial;
-  height: 4px;
-}
-
-.scrollable::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  box-shadow: inset 0 0 0 6px;
-}
 /* custom */
 .w_100 {
   width: 100%;
@@ -171,59 +38,6 @@ ul li {
 
 .pos_abs {
   position: absolute;
-}
-
-.d_flex {
-  display: flex;
-}
-
-.flex_wrap {
-  flex-wrap: wrap;
-}
-
-.d_flex_al_ce {
-  display: flex;
-  align-items: center;
-}
-
-.d_flex_ju_ce {
-  display: flex;
-  justify-content: center;
-}
-
-.d_flex_ju_e {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.d_flex_ju_sb {
-  display: flex;
-  justify-content: space-between;
-}
-
-.d_flex_al_c_ju_e {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.d_flex_al_ce_ju_sb {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.d_flex_al_c_ju_c {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.d_flex_al_c_ju_sb_fd_c {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
 }
 
 .overflow_hidden {
@@ -263,7 +77,7 @@ ul li {
 .sidebar {
   width: 70px;
   padding: 10px 0 30px;
-  border-right: 1px solid var(--lightGray);
+  border-right: 1px solid var(--c-lightGray);
 }
 
 .sidebar a {
@@ -295,24 +109,24 @@ ul li {
 }
 
 .sidebar .figma {
-  background-color: var(--black);
+  background-color: var(--c-black);
 }
 
 .sidebar .mailchimp {
-  background-color: var(--yellow);
+  background-color: var(--c-yellow);
 }
 
 .sidebar .dribbble {
-  background-color: var(--pink);
+  background-color: var(--c-pink);
 }
 
 .sidebar .chat {
-  background-color: var(--green);
+  background-color: var(--c-green);
 }
 
 .sidebar .apps li:last-child {
   background-color: initial;
-  border: 1.5px dashed var(--lightGray);
+  border: 1.5px dashed var(--c-lightGray);
 }
 
 .figma_svg {
@@ -360,13 +174,13 @@ ul li {
 }
 
 .right_container > *:not(:last-child) {
-  border-right: 1px solid var(--lightGray);
+  border-right: 1px solid var(--c-lightGray);
 }
 
 /* users */
 /* users child */
 .users .border {
-  border-bottom: 1px solid var(--lightGray);
+  border-bottom: 1px solid var(--c-lightGray);
 }
 
 .users .pic img {
@@ -425,7 +239,7 @@ ul li {
 }
 
 .self_info .social i {
-  color: var(--iconGray);
+  color: var(--c-iconGray);
   transition: 0.5s;
 }
 
@@ -457,7 +271,7 @@ ul li {
 
 .chat_list .input_box {
   padding: 7px 14px;
-  border: 1px solid var(--lightGray);
+  border: 1px solid var(--c-lightGray);
   border-radius: 6px;
 }
 
@@ -476,7 +290,7 @@ ul li {
 }
 
 .chat_row:hover {
-  background-color: var(--secBlue);
+  background-color: var(--c-secBlue);
 }
 
 .chat_row_in {
@@ -485,7 +299,7 @@ ul li {
 }
 
 .chat_row .chat_row_in {
-  border-bottom: 1px solid var(--lightGray);
+  border-bottom: 1px solid var(--c-lightGray);
 }
 
 .chat_row:last-child .chat_row_in {
@@ -511,7 +325,7 @@ ul li {
 /* chat */
 .chat_header {
   padding: 14px 24px;
-  border-bottom: 1px solid var(--lightGray);
+  border-bottom: 1px solid var(--c-lightGray);
 }
 
 .chat_header .navs > div {
@@ -534,7 +348,7 @@ ul li {
 .chat_actions_divider {
   width: 1px;
   height: 16px;
-  background: var(--iconGray);
+  background: var(--c-iconGray);
   border-radius: 2px;
 }
 
@@ -578,7 +392,7 @@ ul li {
 .chat_header span {
   font-size: 20px;
   font-weight: 300;
-  color: var(--iconGray);
+  color: var(--c-iconGray);
   user-select: none;
 }
 
@@ -649,7 +463,7 @@ ul li {
 
 .msg p {
   padding: 12px;
-  background-color: var(--secBlue);
+  background-color: var(--c-secBlue);
   border-radius: 10px;
 }
 
@@ -682,7 +496,7 @@ ul li {
 }
 
 .msg .close_icon:hover i {
-  color: var(--secText);
+  color: var(--c-secText);
   transition: 0.5s;
 }
 
@@ -711,9 +525,9 @@ ul li {
 
 .msg_reactions li {
   padding: 4px 8px;
-  color: var(--text);
+  color: var(--c-text);
   font-weight: 500;
-  border: 1px solid var(--lightGray);
+  border: 1px solid var(--c-lightGray);
   border-radius: 20px;
 }
 
@@ -721,13 +535,13 @@ ul li {
 .audio {
   width: min(100%, 350px);
   padding: 12px 14px;
-  background-color: var(--secBlue);
+  background-color: var(--c-secBlue);
   border-radius: 10px;
 }
 
 .audio i {
   cursor: pointer;
-  color: var(--text);
+  color: var(--c-text);
   font-size: 12px;
   transition: 0.5s;
 }
@@ -747,7 +561,7 @@ ul li {
 .audio .progress {
   width: 100%;
   height: 7px;
-  background-color: var(--lightGray);
+  background-color: var(--c-lightGray);
   border-radius: 10px;
 }
 
@@ -755,14 +569,14 @@ ul li {
   width: 0;
   height: 100%;
   border-radius: inherit;
-  background-color: var(--green);
+  background-color: var(--c-green);
   transition: 1s;
 }
 
 .audio .dot {
   width: 7px;
   height: 7px;
-  background-color: var(--orange);
+  background-color: var(--c-orange);
   border-radius: 50%;
   margin: 0 10px 0 0;
 }
@@ -787,7 +601,7 @@ ul li {
 
 .audio.played .dot {
   animation: initial;
-  background-color: var(--green);
+  background-color: var(--c-green);
 }
 
 .audio.played .play {
@@ -839,13 +653,13 @@ ul li {
 
 .type_group {
   padding: 16px 24px;
-  background-color: var(--secBlue);
-  border-top: 1px solid var(--lightGray);
+  background-color: var(--c-secBlue);
+  border-top: 1px solid var(--c-lightGray);
 }
 
 .type_group i,
 .type_group span {
-  color: var(--iconGray);
+  color: var(--c-iconGray);
   font-size: 14px;
 }
 
@@ -863,10 +677,10 @@ ul li {
 
 .type_group .input_box > .inner {
   background-color: #fff;
-  color: var(--secText);
+  color: var(--c-secText);
   padding: 16px 20px;
   border-radius: 30px;
-  border: 1px solid var(--lightGray);
+  border: 1px solid var(--c-lightGray);
 }
 
 .type_group .input_box .inner > * {
@@ -885,7 +699,7 @@ ul li {
 }
 
 .type_group .delete i {
-  color: var(--red);
+  color: var(--c-red);
 }
 
 .type_group .balls li {
@@ -900,7 +714,7 @@ ul li {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: var(--green);
+  background-color: var(--c-green);
 }
 
 .type_group .ball_1 {
@@ -1003,7 +817,7 @@ ul li {
 }
 
 .media .col:last-child {
-  border: 1px solid var(--lightGray);
+  border: 1px solid var(--c-lightGray);
   border-radius: 10px;
 }
 
@@ -1041,7 +855,7 @@ ul li {
 }
 
 .labels li h6 {
-  color: var(--secText);
+  color: var(--c-secText);
 }
 
 .labels li i {
@@ -1051,7 +865,7 @@ ul li {
 }
 
 .labels li.work i {
-  color: var(--lightGray);
+  color: var(--c-lightGray);
 }
 
 .labels li.important i {
@@ -1059,15 +873,15 @@ ul li {
 }
 
 .labels li.project i {
-  color: var(--pink);
+  color: var(--c-pink);
 }
 
 .labels li.later i {
-  color: var(--green);
+  color: var(--c-green);
 }
 
 .labels li.travel i {
-  color: var(--orange);
+  color: var(--c-orange);
 }
 /* details */
 /* \right container */

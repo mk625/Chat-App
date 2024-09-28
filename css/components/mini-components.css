@@ -1,0 +1,77 @@
+
+
+.form_control {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.search_input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    background: url(../images/cancel.svg);
+    background-size: 100%;
+    height: 4px;
+    width: 4px;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 0 0 0 6px;
+    position: relative;
+}
+
+.btn {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--c-text);
+    padding: 8px 16px;
+    border: 1px solid var(--c-lightGray);
+    border-radius: 4px;
+}
+
+.active,
+.in_active {
+    position: relative;
+}
+
+.active::after,
+.in_active::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: var(--c-green);
+    position: absolute;
+    right: 4px;
+    bottom: 6px;
+}
+
+.in_active::after {
+    background-color: #fa4e66;
+}
+
+.scrollable {
+    overflow-y: auto;
+    overflow-x: auto;
+    color: #c4c4c400;
+    transition: 0.3s color;
+}
+
+.scrollable:hover {
+    color: #c4c4c460;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scrollable.toY::-webkit-scrollbar {
+    width: initial;
+    height: 4px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 6px;
+}
+
