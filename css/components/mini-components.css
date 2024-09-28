@@ -21,7 +21,7 @@
 
 .btn {
     font-size: 13px;
-    font-weight: 500;
+    font-family: var(--font-medium);
     color: var(--c-text);
     padding: 8px 16px;
     border: 1px solid var(--c-lightGray);
@@ -74,4 +74,33 @@
     border-radius: 4px;
     box-shadow: inset 0 0 0 6px;
 }
+
+.pos_rel {
+    position: relative;
+}
+
+.pos_abs {
+    position: absolute;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+.w_100 {
+    width: 100%;
+}
+
+.d_inline {
+    display: inline-block;
+}
+
+.t_sm {
+    font-size: 12px;
+}
+
+.t_md {
+    font-size: 13px;
+}
+
 

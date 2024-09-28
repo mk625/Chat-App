@@ -1,0 +1,33 @@
+
+
+@font-face {
+    font-family: "Roboto-Regular";
+    font-display: swap;
+    src: url(../../assets/fonts/nunito/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    font-display: swap;
+    src: url(../../assets/fonts/nunito/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    font-display: swap;
+    src: url(../../assets/fonts/nunito/Roboto-Bold.ttf);
+}
+
+
+:root {
+    --font-regular: Roboto-Regular, sans-serif;
+    --font-medium: Roboto-Medium, sans-serif;
+    --font-bold: Roboto-Bold, sans-serif;
+}
+
+
+.font-regular { font-family: var(--font-regular); }
+.font-medium { font-family: var(--font-medium); }
+.font-bold { font-family: var(--font-bold); }
+
+

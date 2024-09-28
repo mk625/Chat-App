@@ -1,29 +1,7 @@
 
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-/* common */
-
-
-
 
 /* custom */
-.w_100 {
-  width: 100%;
-}
-
-.d_inline {
-  display: inline-block;
-}
-
-.t_sm {
-  font-size: 12px;
-}
-
-.t_md {
-  font-size: 13px;
-}
-
 .pic img {
   width: 32px;
   height: 32px;
@@ -31,20 +9,11 @@
   object-position: center;
   border-radius: 50%;
 }
-
-.pos_rel {
-  position: relative;
-}
-
-.pos_abs {
-  position: absolute;
-}
-
-.overflow_hidden {
-  overflow: hidden;
-}
-/* custom */
 /* \common */
+
+
+
+
 
 /* main */
 .main {
@@ -73,6 +42,8 @@
 .preview_mode #close_icon {
   pointer-events: initial;
 }
+
+
 /* sidebar */
 .sidebar {
   width: 70px;
@@ -391,7 +362,6 @@
 
 .chat_header span {
   font-size: 20px;
-  font-weight: 300;
   color: var(--c-iconGray);
   user-select: none;
 }
@@ -526,7 +496,6 @@
 .msg_reactions li {
   padding: 4px 8px;
   color: var(--c-text);
-  font-weight: 500;
   border: 1px solid var(--c-lightGray);
   border-radius: 20px;
 }
@@ -804,7 +773,6 @@
 
 .members ul span {
   font-size: 20px;
-  font-weight: 200;
 }
 
 .media .col {
