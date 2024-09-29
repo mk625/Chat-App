@@ -30,7 +30,7 @@
         <!-- \\\ components -->
 
         <!-- modules -->
-            <link rel="stylesheet" href="./css/stylesheet.css">
+            <link rel="stylesheet" href="./css/home.css">
             <link rel="stylesheet" href="./css/media.css">        
         <!-- \\\ modules -->
     <!-- \\\\ own styles -->
@@ -38,46 +38,46 @@
 
 <body>
     <!-- main -->
-    <main class="main d_flex overflow_hidden" id="main">
+    <main class="app-container" id="main">
         <!-- sidebar -->
         <section class="sidebar d_flex_al_c_ju_sb_fd_c overflow_hidden">
-            <ul class="apps">
-                <li class="figma d_flex_al_c_ju_c">
-                    <a href="#">
+            <ul class="sidebar-nav-list apps">
+                <li class="sidebar-nav-list figma">
+                    <a class="sidebar-nav-link">
                         <img src="./images/figma.svg" alt="Figma" title="Figma" class="figma_svg">
                     </a>
                 </li>
 
-                <li class="mailchimp d_flex_al_c_ju_c">
-                    <a href="#">
+                <li class="sidebar-nav-list mailchimp">
+                    <a class="sidebar-nav-link">
                         <img src="./images/mailchimp.svg" alt="Mail Chimp" title="Mail Chimp" class="mailchimp_svg">
                     </a>
                 </li>
 
-                <li class="dribbble d_flex_al_c_ju_c">
-                    <a href="#">
+                <li class="sidebar-nav-list dribbble">
+                    <a class="sidebar-nav-link">
                         <img src="./images/dribbble.svg" alt="Dribbble" title="dribbble" class="dribbble_svg">
                     </a>
                 </li>
 
-                <li class="chat d_flex_al_c_ju_c">
-                    <a href="#">
+                <li class="sidebar-nav-list chat">
+                    <a class="sidebar-nav-link">
                         <img src="./images/chat.svg" alt="Chat" title="Chat" class="chat_svg">
                     </a>
                 </li>
 
-                <li class="d_flex_al_c_ju_c">
-                    <a href="#"><i class="fa-duotone fa-plus"></i></a>
+                <li class="sidebar-nav-list">
+                    <a class="sidebar-nav-link"><i class="fa-duotone fa-plus"></i></a>
                 </li>
             </ul>
 
-            <ul class="manage">
-                <li>
-                    <a href="#"><span class="material-symbols-outlined"> settings </span></a>
+            <ul class="manage-nav-lists">
+                <li class="manage-nav-list">
+                    <a href="#" class="d-block"><span class="material-symbols-outlined link-icon"> settings </span></a>
                 </li>
 
-                <li>
-                    <a href="#"><span class="material-symbols-outlined"> person </span></a>
+                <li class="manage-nav-list">
+                    <a href="#" class="d-block"><span class="material-symbols-outlined link-icon"> person </span></a>
                 </li>
 
             </ul>
@@ -88,7 +88,7 @@
         <!-- right_container -->
         <section class="right_container d_flex" id="right_container">
             <!-- users -->
-            <section class="users overflow_hidden" id="users">
+            <section class="users-sec overflow_hidden" id="users">
                 <div class="self_info">
                     <div class="inner border">
                         <div class="pic active d_inline">
@@ -352,7 +352,7 @@
             <!-- \users -->
 
             <!-- chat -->
-            <section class="chat overflow_hidden" id="chat">
+            <section class="chat-sec overflow_hidden" id="chat">
                 <div class="inner">
                     <header class="chat_header d_flex_al_ce_ju_sb">
                         <div class="d_flex_al_ce navs">
@@ -588,7 +588,7 @@
             <!-- \chat -->
 
             <!-- details -->
-            <section class="details scrollable pos_rel" id="details">
+            <section class="details-sec scrollable pos_rel" id="details">
                 <div class="inner">
                     <div class="close" onclick="togglePages('details')">
                         <i class="fa-solid fa-xmark"></i>

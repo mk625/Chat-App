@@ -1,5 +1,10 @@
 
 
+.d-block {
+    display: block;
+}
+
+
 .form_control {
     width: 100%;
     height: 100%;
