@@ -119,15 +119,15 @@
   /* toggles */
 
   /* users */
-  .self_info {
+  .self-info {
     padding: 20px 15px 0;
   }
 
-  .self_info > .inner {
+  .self-info .inner-content {
     padding: 0 0 15px;
   }
 
-  .self_info .pic img {
+  .self-info .pic img {
     width: 70px;
     height: 70px;
   }
