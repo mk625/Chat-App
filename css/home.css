@@ -230,26 +230,6 @@
   transition: 0.5s;
 }
 
-.active_users h5 {
-  margin: 0 0 20px;
-}
-
-.active_users .cols li {
-  margin: 0 20px 0 0;
-}
-
-.active_users .cols li:last-child {
-  margin: 0;
-}
-
-.chat_list .chats_ht {
-  margin: 0 0 20px;
-}
-
-.chat_list .heading {
-  margin: 0 0 20px;
-}
-
 .chat_list .input_box {
   padding: 7px 14px;
   border: 1px solid var(--c-lightGray);
@@ -740,10 +720,6 @@
   display: none;
 }
 
-.details .heading {
-  margin: 0 0 12px;
-}
-
 .details h5 {
   font-size: 14px;
   margin: 0 6px 0 0;
@@ -798,10 +774,6 @@
 .media li:hover img {
   opacity: 0.8;
   transition: 0.5s;
-}
-
-.labels .heading {
-  margin: 0 0 16px;
 }
 
 .labels li {
