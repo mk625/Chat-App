@@ -1,17 +1,6 @@
 
 
-
-.mB5 { margin-bottom: 5px; }
-.mB8 { margin-bottom: 8px; }
-.mB10 { margin-bottom: 10px; }
-.mB15 { margin-bottom: 15px; }
-
-
-.d-block {
-    display: block;
-}
-
-
+/* forms */
 .form_control {
     width: 100%;
     height: 100%;
@@ -32,18 +21,23 @@
 }
 
 .btn {
+    display: inline-block;
+    padding: 8px 16px;
     font-size: 13px;
     font-family: var(--font-medium);
-    color: var(--c-text);
-    padding: 8px 16px;
-    border: 1px solid var(--c-lightGray);
     border-radius: 4px;
 }
 
-.active,
-.in_active {
-    position: relative;
+.btn.btn-secondary {
+    color: var(--c-text);
+    border: 1px solid var(--c-lightGray);
 }
+/* \\\ forms */
+
+
+
+.active,
+.in_active { position: relative; }
 
 .active::after,
 .in_active::after {
@@ -57,62 +51,6 @@
     right: 4px;
     bottom: 6px;
 }
-
-.in_active::after {
-    background-color: #fa4e66;
-}
-
-.scrollable {
-    overflow-y: auto;
-    overflow-x: auto;
-    color: #c4c4c400;
-    transition: 0.3s color;
-}
-
-.scrollable:hover {
-    color: #c4c4c460;
-}
-
-.scrollable::-webkit-scrollbar {
-    width: 4px;
-}
-
-.scrollable.toY::-webkit-scrollbar {
-    width: initial;
-    height: 4px;
-}
-
-.scrollable::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 6px;
-}
-
-.pos_rel {
-    position: relative;
-}
-
-.pos_abs {
-    position: absolute;
-}
-
-.overflow_hidden {
-    overflow: hidden;
-}
-
-.w_100 {
-    width: 100%;
-}
-
-.d_inline {
-    display: inline-block;
-}
-
-.t_sm {
-    font-size: 12px;
-}
-
-.t_md {
-    font-size: 13px;
-}
+.in_active::after { background-color: #fa4e66; }
 
 

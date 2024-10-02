@@ -255,7 +255,7 @@
 }
 
 .chat_row_in {
-  padding: 14px 0;
+  padding: 14px 0px;
   cursor: pointer;
 }
 
@@ -376,6 +376,8 @@
 }
 /* \search clicked */
 
+
+
 .chat_header li {
   cursor: pointer;
 }
@@ -385,7 +387,11 @@
 }
 
 .msg_block {
-  padding: 0 0 30px;
+  margin-bottom: 30px;
+}
+
+.msg_block:last-child {
+  margin-bottom: 0;
 }
 
 .msg_block:last-child {
@@ -482,6 +488,7 @@
   border-radius: 20px;
 }
 
+
 /* audio msg */
 .audio {
   width: min(100%, 350px);
@@ -564,6 +571,8 @@
 }
 /* \audio msg */
 
+
+
 /* my_msg */
 .my_msg .pic {
   order: 2;
@@ -601,6 +610,8 @@
   width: 130px;
 }
 /* \my_msg */
+
+
 
 .type_group {
   padding: 16px 24px;
@@ -824,3 +835,4 @@
 /* details */
 /* \right container */
 /* \main */
+
