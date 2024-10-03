@@ -1,26 +1,20 @@
+
 // variables
-// sections
-let main = document.getElementById("main");
-let right_container = document.getElementById("right_container");
-let users = document.getElementById("users");
-let details = document.getElementById("details");
-let chat_list = document.getElementById("chat_list");
-let type_group = document.getElementById("type_group");
-let chat = document.getElementById("chat");
-let messages = document.getElementById("messages");
-let search_input = document.getElementById("search_input");
-// sections
-let closeIcon = document.getElementById("close_icon");
-let previewImgId;
-let barWidthAnimation;
-let audParent;
+  // sections
+    let main = document.getElementById("main");
+    let right_container = document.getElementById("right_container");
+    let users = document.getElementById("users");
+    let details = document.getElementById("details");
+    let chat = document.getElementById("chat");
+    let search_input = document.getElementById("search_input");
+  // sections
+
+  let closeIcon = document.getElementById("close_icon");
+  let previewImgId;
+  let barWidthAnimation;
+  let audParent;
 // \variables
 
-// on load
-chat_list.style.height = main.offsetHeight - chat_list.offsetTop + "px";
-messages.style.height =
-  main.offsetHeight - messages.offsetTop - type_group.offsetHeight + "px";
-// \on load
 
 // functions
 function onSearchToggle() {

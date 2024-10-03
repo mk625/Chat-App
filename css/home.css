@@ -1,4 +1,10 @@
 
+/* root */
+:root {
+  --h-messages-header: 80px;
+  --h-messages-footer: 85px;
+}
+/* \\\ root */
 
 
 /* custom */
@@ -285,6 +291,7 @@
 
 /* chat */
 .chat_header {
+  height: var(--h-messages-heade);
   padding: 14px 24px;
   border-bottom: 1px solid var(--c-lightGray);
 }
@@ -382,8 +389,10 @@
   cursor: pointer;
 }
 
-.messages {
+.messages-sec {
+  height: calc(100vh - (var(--h-messages-header) + var(--h-messages-footer)));
   padding: 24px;
+  overflow-y: auto;
 }
 
 .msg_block {
@@ -614,6 +623,7 @@
 
 
 .type_group {
+  height: var(--h-messages-footer);
   padding: 16px 24px;
   background-color: var(--c-secBlue);
   border-top: 1px solid var(--c-lightGray);
@@ -756,7 +766,7 @@
   margin: 0 14px 0 0;
 }
 
-.members ul span {
+.members .action-icon {
   font-size: 20px;
 }
 
