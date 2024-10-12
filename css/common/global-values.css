@@ -1,6 +1,8 @@
 
 
 :root {
+    --w-sidebar: 70px;
+
     --ufast-trans: all 0.1s ease-in-out;
     --fast-trans: all 0.2s ease-in-out;
     --default-trans: all 0.3s ease-in-out;

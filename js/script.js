@@ -38,18 +38,21 @@ function previewImageHandle(id) {
   }
 }
 
-function togglePages(page) {
+function togglePages(page, state) {
   if (page === "details") {
-    if (page === details) {
+    if (state === "show") {
       right_container.classList.add("detailsToggle");
     } else {
       right_container.classList.remove("detailsToggle");
     }
   } else if (page === "users") {
-    if (users.clientWidth === 0) {
+    console.log("users");
+    if (state = "show") {
+      console.log("users if");
       right_container.classList.add("usersToggle");
     } else {
       right_container.classList.remove("usersToggle");
+      console.log("users else");
     }
   }
 }
