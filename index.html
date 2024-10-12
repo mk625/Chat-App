@@ -22,6 +22,7 @@
 
         <!-- common -->
             <link rel="stylesheet" href="./css/common/global.css">
+            <link rel="stylesheet" href="./css/common/global-values.css">
             <link rel="stylesheet" href="./css/common/flex.css">
             <link rel="stylesheet" href="./css/common/style-bits.css">
         <!-- \\\ common -->
@@ -356,18 +357,23 @@
                 <div class="inner">
                     <header class="chat_header d-flx aI-C jC-SB">
                         <div class="d-flx aI-C navs">
-                            <div class="back" onclick="togglePages('users')">
-                                <span class="material-symbols-outlined chat_back_btn">
-                                    arrow_back_ios
-                                </span>
+                            <div>
+                                <button class="plain-btn back" onclick="togglePages('users')">
+                                    <span class="material-symbols-outlined chat_back_btn"> arrow_back_ios </span>
+                                </button>
                             </div>
-
-                            <div class="pic" onclick="togglePages('details')">
-                                <img src="./images/user_1.avif" alt="User" title="User">
-                            </div>
-
-                            <div class="name" onclick="togglePages('details')">
-                                <h5>Therasa Webb</h5>
+                            <div>
+                                <button class="plain-btn" onclick="togglePages('details')">
+                                    <div class="d-flx aI-C g-10">
+                                        <div class="pic">
+                                            <img src="./images/user_1.avif" alt="User" title="User">
+                                        </div>
+            
+                                        <div class="name">
+                                            <h5>Therasa Webb</h5>
+                                        </div>
+                                    </div>
+                                </button>
                             </div>
 
                         </div>
@@ -585,11 +591,11 @@
             <!-- \chat -->
 
             <!-- details -->
-            <section class="details-sec scrollable pos-rel" id="details">
+            <section class="details-sec scrollable pos-rel" id="details-sec">
                 <div class="inner">
-                    <div class="close" onclick="togglePages('details')">
+                    <button class="details-close-icon plain-btn" onclick="togglePages('details')">
                         <i class="fa-solid fa-xmark"></i>
-                    </div>
+                    </button>
 
                     <div class="about mB40">
                         <div class="mB15">

@@ -1,52 +1,28 @@
+
 /* tabs */
-@media screen and (max-width: 1199px) {
-  /* right_container */
-  .users {
+@media screen and (max-width: 991px) {
+  .users-sec {
     width: 40%;
   }
 
-  .chat {
+  .chat-sec {
     width: 60%;
   }
 
-  /* toggles */
-  .right_container.detailsToggle .chat {
-    width: 0;
+  .details-sec {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: -25%;
   }
 
-  .right_container.detailsToggle .details {
-    width: 60%;
-  }
-  /* \toggles */
-
-  /* users */
-  .chat_row p {
-    max-width: 120px;
-  }
-  /* users */
-
-  /* chat */
-  .chat_actions li {
-    margin: 0 14px 0 0;
-  }
-
-  .msg .img_col.preview {
-    transform: translate(-50%, -50%) scale(2);
-  }
-  /* \chat */
-
-  /* details */
-  .details {
-    width: 0;
-  }
-
-  .details .close {
+  .details-close-icon {
     display: block;
   }
-  /* \details */
-  /* \right_container */
 }
 /* \tabs */
+
+
 
 /* mobile */
 @media screen and (max-width: 767px) {
@@ -85,7 +61,7 @@
   }
   /* \common */
 
-  /* right_container */
+  
   /* child width */
   .users {
     width: 0;
@@ -99,6 +75,8 @@
     width: 0;
   }
   /* child width */
+
+
 
   /* toggles */
   .right_container.detailsToggle .chat {
@@ -118,72 +96,70 @@
   }
   /* toggles */
 
+
+
   /* users */
-  .self-info {
-    padding: 20px 15px 0;
-  }
+    .self-info {
+      padding: 20px 15px 0;
+    }
 
-  .self-info .inner-content {
-    padding: 0 0 15px;
-  }
+    .self-info .inner-content {
+      padding: 0 0 15px;
+    }
 
-  .self-info .pic img {
-    width: 70px;
-    height: 70px;
-  }
+    .self-info .pic img {
+      width: 70px;
+      height: 70px;
+    }
 
-  .active_users {
-    padding: 0 15px;
-  }
+    .active_users {
+      padding: 0 15px;
+    }
 
-  .active_users > .inner {
-    padding: 20px 0;
-  }
+    .active_users > .inner {
+      padding: 20px 0;
+    }
 
-  .chat_list {
-    padding: 20px 15px 0;
-  }
+    .chat_list {
+      padding: 20px 15px 0;
+    }
 
-  .chat_rows {
-    margin: 0 -15px;
-  }
+    .chat_rows {
+      margin: 0 -15px;
+    }
 
-  .chat_row {
-    padding: 0 15px;
-  }
+    .chat_row {
+      padding: 0 15px;
+    }
   /* \users */
 
   /* chat */
-  .chat_header .navs > div {
-    margin: 0 6px 0 0;
-  }
+    .chat_header .pic img {
+      width: 36px;
+      height: 36px;
+    }
 
-  .chat_header .pic img {
-    width: 36px;
-    height: 36px;
-  }
+    .chat_header .icon {
+      font-size: 16px;
+    }
 
-  .chat_header .icon {
-    font-size: 16px;
-  }
+    .msg_block .pic {
+      display: none;
+    }
 
-  .msg_block .pic {
-    display: none;
-  }
+    .chat_header,
+    .messages-sec {
+      padding: 20px 15px;
+    }
 
-  .chat_header,
-  .messages-sec {
-    padding: 20px 15px;
-  }
+    .chat .type_group {
+      padding: 10px 15px;
+    }
 
-  .chat .type_group {
-    padding: 10px 15px;
-  }
-
-  .chat header .back {
-    display: block;
-  }
+    .chat header .back {
+      display: block;
+    }
   /* \chat */
-  /* \tight_container */
 }
-/* \tabs */
+/* \\\ tabs */
+

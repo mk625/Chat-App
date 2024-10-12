@@ -4,7 +4,7 @@
     let main = document.getElementById("main");
     let right_container = document.getElementById("right_container");
     let users = document.getElementById("users");
-    let details = document.getElementById("details");
+    let details = document.getElementById("details-sec");
     let chat = document.getElementById("chat");
     let search_input = document.getElementById("search_input");
   // sections
@@ -40,7 +40,7 @@ function previewImageHandle(id) {
 
 function togglePages(page) {
   if (page === "details") {
-    if (details.clientWidth === 0) {
+    if (page === details) {
       right_container.classList.add("detailsToggle");
     } else {
       right_container.classList.remove("detailsToggle");

@@ -32,6 +32,16 @@
     color: var(--c-text);
     border: 1px solid var(--c-lightGray);
 }
+
+.plain-btn { 
+    border: none; 
+    outline: none; 
+    background: none; 
+    display: inline-block; 
+    color: inherit; 
+    cursor: pointer; 
+    transition: var(--fast-trans); 
+}
 /* \\\ forms */
 
 

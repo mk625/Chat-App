@@ -56,6 +56,7 @@
 .sidebar {
   width: 70px;
   padding: 10px 0 30px;
+  background-color: var(--c-white);
   border-right: 1px solid var(--c-lightGray);
 }
 
@@ -156,13 +157,16 @@
   width: 25%;
 }
 
-.right_container > * {
-  transition: width 0.5s;
+.users-sec, .chat-sec, .details-sec {
+  background-color: var(--c-white);
+  transition: all 0.3s ease-in-out;
 }
 
-.right_container > *:not(:last-child) {
+.users-sec, .chat-sec {
   border-right: 1px solid var(--c-lightGray);
 }
+
+
 
 /* users */
 /* users child */
@@ -289,6 +293,9 @@
 }
 /* \users */
 
+
+
+
 /* chat */
 .chat_header {
   height: var(--h-messages-heade);
@@ -296,10 +303,6 @@
   border-bottom: 1px solid var(--c-lightGray);
 }
 
-.chat_header .navs > div {
-  cursor: pointer;
-  margin: 0 12px 0 0;
-}
 .chat_actions {
   display: flex;
   gap: 15px;
@@ -382,6 +385,7 @@
   transition: 0.5s;
 }
 /* \search clicked */
+
 
 
 
@@ -496,6 +500,7 @@
   border: 1px solid var(--c-lightGray);
   border-radius: 20px;
 }
+
 
 
 /* audio msg */
@@ -728,17 +733,21 @@
 }
 /* \chat */
 
+
+
+
+
 /* details */
 .details-sec .inner {
   padding: 30px;
 }
 
-.details .close {
+.details-close-icon {
+  display: none;
   position: absolute;
   right: 20px;
   top: 20px;
   padding: 4px;
-  display: none;
 }
 
 .details h5 {
@@ -845,4 +854,5 @@
 /* details */
 /* \right container */
 /* \main */
+
 
