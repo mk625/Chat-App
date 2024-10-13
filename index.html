@@ -92,24 +92,23 @@
         <section class="right_container d-flx" id="right_container">
             <!-- users -->
             <section class="users-sec overflow-hidden" id="users">
-                <div class="self-info">
-                    <div class="inner-content border">
-                        <div class="pic active d-in-block">
-                            <img src="./images/profile.avif" alt="Profile Photo" title="Profile Photo">
-                        </div>
-
-                        <h4>Heather Parker</h4>
-
-                        <ul class="social d-flx jC-C">
-                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                        </ul>
-
-                    </div>
-                </div>
-
                 <div>
+                    <div class="self-info">
+                        <div class="inner-content border">
+                            <div class="pic active d-in-block">
+                                <img src="./images/profile.avif" alt="Profile Photo" title="Profile Photo">
+                            </div>
+    
+                            <div><h4>Heather Parker</h4></div>
+    
+                            <ul class="social d-flx jC-C">
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            </ul>
+    
+                        </div>
+                    </div>
                     <div class="active_users">
                         <div class="inner border">
                             <div class="mB20"><h5>Active Users</h5></div>
@@ -179,20 +178,22 @@
                         </div>
 
                     </div>
+                </div>
 
-                    <div class="chat_list scrollable" id="chat_list">
-                        <div class="heading">
-                            <div class="mB20"><h5 class="chats_ht">Chats</h5></div>
+                <div class="chat_list scrollable" id="chat_list">
+                    <div class="mB10 heading">
+                        <div class="mB20"><h5 class="chats_ht">Chats</h5></div>
 
-                            <div class="input_box d-flx aI-C">
-                                <span class="material-symbols-outlined icon">search</span>
-                                <input type="search" placeholder="Search" class="form_control search_input">
-                            </div>
+                        <div class="input_box d-flx aI-C">
+                            <span class="material-symbols-outlined icon">search</span>
+                            <input type="search" placeholder="Search" class="form_control search_input">
                         </div>
+                    </div>
 
-                        <div class="chat-rows-container">
-                            <ul class="chat_rows">
-                                <li class="chat_row" onclick="togglePages('users', 'hide')">
+                    <div class="chat-rows-container">
+                        <ul class="chat_rows">
+                            <li>
+                                <a class="chat_row" onclick="togglePages('users', 'hide')">
                                     <div class="chat_row_in d-flx">
                                         <div class="pic active">
                                             <img src="./images/user_12.avif" alt="User" title="User">
@@ -203,16 +204,16 @@
                                                 <div><span class="c-black">Darlene Robertson</span></div>
                                                 <div><span class="f12">10:30 AM</span></div>
                                             </div>
-    
                                             <div>
                                                 <p>Text me when you arrive new bus stop and ready to go.</p>
                                             </div>
                                         </div>
-    
                                     </div>
-                                </li>
-    
-                                <li class="chat_row" onclick="togglePages('users', 'hide')">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="chat_row" onclick="togglePages('users', 'hide')">
                                     <div class="chat_row_in d-flx">
                                         <div class="pic in_active">
                                             <img src="./images/user_2.avif" alt="User" title="User">
@@ -230,9 +231,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-    
-                                <li class="chat_row" onclick="togglePages('users', 'hide')">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="chat_row" onclick="togglePages('users', 'hide')">
                                     <div class="chat_row_in d-flx">
                                         <div class="pic active">
                                             <img src="./images/user_1.avif" alt="User" title="User">
@@ -250,11 +253,12 @@
                                                 </p>
                                             </div>
                                         </div>
-    
                                     </div>
-                                </li>
-    
-                                <li class="chat_row" onclick="togglePages('users', 'hide')">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="chat_row" onclick="togglePages('users', 'hide')">
                                     <div class="chat_row_in d-flx">
                                         <div class="pic in_active">
                                             <img src="./images/user_3.avif" alt="User" title="User">
@@ -272,11 +276,12 @@
                                                 </p>
                                             </div>
                                         </div>
-    
                                     </div>
-                                </li>
-    
-                                <li class="chat_row" onclick="togglePages('users', 'hide')">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="chat_row" onclick="togglePages('users', 'hide')">
                                     <div class="chat_row_in d-flx">
                                         <div class="pic in_active">
                                             <img src="./images/user_4.webp" alt="User" title="User">
@@ -293,16 +298,17 @@
                                                 </p>
                                             </div>
                                         </div>
-    
                                     </div>
-                                </li>
-    
-                                <li class="chat_row" onclick="togglePages('users', 'hide')">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="chat_row" onclick="togglePages('users', 'hide')">
                                     <div class="chat_row_in d-flx">
                                         <div class="pic active">
                                             <img src="./images/user_13.avif" alt="User" title="User">
                                         </div>
-    
+                                        
                                         <div class="w100">
                                             <div class="d-flx aI-C jC-SB">
                                                 <div><span class="c-black">Jane Cooper</span></div>
@@ -314,11 +320,12 @@
                                                 </p>
                                             </div>
                                         </div>
-    
                                     </div>
-                                </li>
-    
-                                <li class="chat_row" onclick="togglePages('users', 'hide')">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="chat_row" onclick="togglePages('users', 'hide')">
                                     <div class="chat_row_in d-flx">
                                         <div class="pic in_active">
                                             <img src="./images/user_14.avif" alt="User" title="User">
@@ -335,12 +342,10 @@
                                                 </p>
                                             </div>
                                         </div>
-    
                                     </div>
-                                </li>
-    
-                            </ul>
-                        </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -552,17 +557,17 @@
 
                         <div class="input_box w100 overflow-hidden">
                             <div class="inner d-flx aI-C">
-                                <div class="w100 d-flx aI-C">
-                                    <a href="#" onclick="recordingToggle('record')"><i
-                                            class="fa-solid fa-microphone"></i></a>
+                                <div class="w100 h100 d-flx aI-C">
+                                    <a class="d-in-block" onclick="recordingToggle('record')">
+                                        <i class="fa-solid fa-microphone"></i></a>
                                     <input type="text" placeholder="Add a comment" class="form_control">
                                 </div>
 
                                 <ul class="d-flx aI-C">
-                                    <li><a href="#"><i class="fa-regular fa-images"></i></a></li>
-                                    <li><a href="#"><i class="fa-regular fa-face-smile"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-tag"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+                                    <li><a class="d-in-block"><i class="fa-regular fa-images"></i></a></li>
+                                    <li><a class="d-in-block"><i class="fa-regular fa-face-smile"></i></a></li>
+                                    <li><a class="d-in-block"><i class="fa-solid fa-tag"></i></a></li>
+                                    <li><a class="d-in-block"><i class="fa-solid fa-location-dot"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -598,19 +603,19 @@
                             <li class="d-flx aI-C jC-SB">
                                 <div class="d-flx aI-C">
                                     <div class="pic">
-                                        <a href="#">
+                                        <div>
                                             <img src="./images/user_2.avif" alt="User" title="User">
-                                        </a>
+                                        </div>
                                     </div>
                                     <div><span>Robert Fox</span></div>
                                 </div>
 
                                 <ul class="d-flx member_actions">
                                     <li>
-                                        <a href="#"><span class="material-symbols-outlined action-icon">call</span></a>
+                                        <a class="d-in-block"><span class="material-symbols-outlined action-icon">call</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="material-symbols-outlined action-icon">chat_bubble</span></a>
+                                        <a class="d-in-block"><span class="material-symbols-outlined action-icon">chat_bubble</span></a>
                                     </li>
                                 </ul>
 
@@ -619,9 +624,9 @@
                             <li class="d-flx aI-C jC-SB">
                                 <div class="d-flx aI-C">
                                     <div class="pic">
-                                        <a href="#">
+                                        <div>
                                             <img src="./images/user_1.avif" alt="User" title="User">
-                                        </a>
+                                        </div>
                                     </div>
 
                                     <div><span>Therasa Webb</span></div>
@@ -630,10 +635,10 @@
 
                                 <ul class="d-flx member_actions">
                                     <li>
-                                        <a href="#"><span class="material-symbols-outlined action-icon">call</span></a>
+                                        <a class="d-in-block"><span class="material-symbols-outlined action-icon">call</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="material-symbols-outlined action-icon">chat_bubble</span></a>
+                                        <a class="d-in-block"><span class="material-symbols-outlined action-icon">chat_bubble</span></a>
                                     </li>
                                 </ul>
 
@@ -642,19 +647,19 @@
                             <li class="d-flx aI-C jC-SB">
                                 <div class="d-flx aI-C">
                                     <div class="pic">
-                                        <a href="#">
+                                        <div>
                                             <img src="./images/user_3.avif" alt="User" title="User">
-                                        </a>
+                                        </div>
                                     </div>
                                     <div><span>Kristin Watson</span></div>
                                 </div>
 
                                 <ul class="d-flx member_actions">
                                     <li>
-                                        <a href="#"><span class="material-symbols-outlined action-icon">call</span></a>
+                                        <a class="d-in-block"><span class="material-symbols-outlined action-icon">call</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="material-symbols-outlined action-icon">chat_bubble</span></a>
+                                        <a class="d-in-block"><span class="material-symbols-outlined action-icon">chat_bubble</span></a>
                                     </li>
                                 </ul>
 
@@ -663,19 +668,19 @@
                             <li class="d-flx aI-C jC-SB">
                                 <div class="d-flx aI-C">
                                     <div class="pic">
-                                        <a href="#">
+                                        <div>
                                             <img src="./images/user_4.webp" alt="User" title="User">
-                                        </a>
+                                        </div>
                                     </div>
                                     <div><span>Cody Fisher</span></div>
                                 </div>
 
                                 <ul class="d-flx member_actions">
                                     <li>
-                                        <a href="#"><span class="material-symbols-outlined action-icon">call</span></a>
+                                        <a class="d-in-block"><span class="material-symbols-outlined action-icon">call</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="material-symbols-outlined action-icon">chat_bubble</span></a>
+                                        <a class="d-in-block"><span class="material-symbols-outlined action-icon">chat_bubble</span></a>
                                     </li>
                                 </ul>
 

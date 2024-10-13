@@ -199,9 +199,11 @@
 }
 
 .users-sec .chat_list {
+  height: calc(100vh - 395px);
   padding: 30px 30px 0;
 }
 /* \users child */
+
 
 .self-info .pic {
   margin: 0 auto 18px;
@@ -258,6 +260,7 @@
 }
 
 .chat_list .chat_row {
+  display: block;
   padding: 0 30px;
   transition: 0.5s;
 }
@@ -474,12 +477,12 @@
 }
 
 .msg .img_col.preview {
-  z-index: 1;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(2.6);
   animation: previewImage 0.7s;
+  z-index: 1;
 }
 
 @keyframes previewImage {
@@ -631,7 +634,7 @@
 
 .type_group {
   height: var(--h-messages-footer);
-  padding: 16px 24px;
+  padding: 0px 24px;
   background-color: var(--c-secBlue);
   border-top: 1px solid var(--c-lightGray);
 }
@@ -655,9 +658,10 @@
 }
 
 .type_group .input_box > .inner {
-  background-color: #fff;
+  height: 52px;
+  background-color: var(--c-white);
   color: var(--c-secText);
-  padding: 16px 20px;
+  padding: 0 20px;
   border-radius: 30px;
   border: 1px solid var(--c-lightGray);
 }

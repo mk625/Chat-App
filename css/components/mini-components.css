@@ -31,6 +31,11 @@
 .btn.btn-secondary {
     color: var(--c-text);
     border: 1px solid var(--c-lightGray);
+    transition: var(--fast-trans);
+}
+
+.btn.btn-secondary:hover {
+    border-color: var(--c-gray-80);
 }
 
 .plain-btn { 
