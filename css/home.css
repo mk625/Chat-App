@@ -8,7 +8,7 @@
 
 
 /* custom */
-.pic img {
+.profile-pic {
   width: 32px;
   height: 32px;
   object-fit: cover;
@@ -176,7 +176,7 @@
   border-bottom: 1px solid var(--c-lightGray);
 }
 
-.users-sec .pic img {
+.users-sec .profile-pic {
   width: 40px;
   height: 40px;
 }
@@ -209,7 +209,7 @@
   margin: 0 auto 18px;
 }
 
-.self-info .pic img {
+.self-info .profile-pic {
   width: 100px;
   height: 100px;
 }
@@ -328,7 +328,7 @@
   font-size: 14px;
 }
 
-.chat_header .pic img {
+.chat_header .profile-pic {
   width: 42px;
   height: 42px;
   border-radius: 10px;
@@ -393,10 +393,7 @@
 
 
 
-
-.chat_header li {
-  cursor: pointer;
-}
+.chat-action-btn {  cursor: pointer; }
 
 .messages-sec {
   height: calc(100vh - (var(--h-messages-header) + var(--h-messages-footer)));
